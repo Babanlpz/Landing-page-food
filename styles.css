@@ -299,3 +299,93 @@ header {
 .categorie-box-5 {
   background: rgb(255, 222, 254);
 }
+
+/* ########################## */
+/* Produits */
+/* ########################## */
+
+.products {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  grid-gap: 1rem;
+  margin-top: 2rem;
+}
+
+.product-box {
+  padding: 20px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.product-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  object-position: center;
+}
+.product-box span {
+  font-weight: 400;
+  font-size: 12px;
+}
+.product-box h4 {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--light-red);
+}
+
+.product-box .price {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: var(--dark-orange);
+}
+
+.product-box .bx-cart-add {
+  color: var(--text);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  background: var(--dark-red);
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 1rem 0 0 0px;
+  cursor: pointer;
+  color: var(--bg);
+  transition: background 0.2s ease-in-out;
+}
+.product-box .bx-cart-add:hover {
+  background: var(--light-red);
+}
+
+.product-box .bxs-heart {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.3rem;
+  color: var(--light-orange);
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.product-box .bxs-heart:hover {
+  color: var(--dark-orange);
+}
+
+.product-box .discount {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  background: var(--dark-orange);
+  color: var(--light-orange);
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}

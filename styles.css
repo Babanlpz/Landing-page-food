@@ -569,3 +569,108 @@ footer {
   font-size: 13px;
   padding: 0.5rem 0;
 }
+
+/* ########################## */
+/* Responsive*/
+/* ########################## */
+
+@media screen and (max-width: 1080px) {
+  header {
+    padding: 18px 60px;
+  }
+  .home-txt {
+    padding: 0 100px;
+  }
+  .slider-container img {
+    right: 20px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 991px) {
+  header {
+    padding: 18px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 852px) {
+  header {
+    padding: 12px 4%;
+  }
+  #burger-menu {
+    display: block;
+  }
+
+  .slider-container img {
+    width: 300px;
+  }
+  .navigation {
+    position: absolute;
+    top: -600px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  .navigation a {
+    padding: 1rem;
+    margin: 1rem;
+    display: block;
+  }
+  .navigation a:hover,
+  .navigation a.link-active {
+    border-radius: 0.5rem;
+  }
+  .navigation.active {
+    top: 100%;
+  }
+  .products-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  }
+  .about {
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  }
+  .avis-content {
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  }
+}
+
+@media screen and (max-width: 482px) {
+  .home-txt {
+    padding: 0 20px;
+    margin-top: -250px;
+  }
+  .slider-container img {
+    right: 0;
+  }
+
+  .profil img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .profil span {
+    display: none;
+  }
+
+  .home-txt {
+    padding-bottom: 17px;
+  }
+  .section-heading {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-heading .btn {
+    margin-top: 1rem;
+    width: 100px;
+  }
+}

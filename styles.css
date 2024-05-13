@@ -479,3 +479,93 @@ header {
 .avis-box .avis-profil h6 {
   font-size: 1.2rem;
 }
+
+/* ########################## */
+/* Footer*/
+/* ########################## */
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  background: var(--light-red);
+  padding: 1rem;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box p {
+  font-size: 0.8rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.footer-social .bx {
+  padding: 10px;
+  background: var(--bg);
+  color: var(--dark-red);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.footer-social .bx:hover {
+  background: var(--dark-red);
+  color: var(--bg);
+}
+
+.footer-box h6 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-box a {
+  color: var(--dark-red);
+}
+.footer-box a:hover {
+  color: var(--bg);
+}
+
+.footer-box form {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  border-bottom: 1px solid var(--dark-red);
+}
+
+.footer-box input {
+  outline: none;
+  border: none;
+
+  background: none;
+  color: var(--bg);
+}
+
+.footer-box form .bx {
+  color: var(--dark-red);
+  font-size: 1.5rem;
+}
+
+.footer-box form .bx-right-arrow-alt {
+  cursor: pointer;
+}
+
+.copy {
+  text-align: center;
+  font-size: 13px;
+  padding: 0.5rem 0;
+}

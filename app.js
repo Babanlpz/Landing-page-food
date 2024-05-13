@@ -7,3 +7,19 @@ var swiper = new Swiper(".home", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const navigation = document.querySelector(".navigation");
+const burger = document.querySelector("#burger-menu");
+const linkNavigation = document.querySelectorAll(".navigation a");
+
+burger.addEventListener("click", () => {
+  navigation.classList.toggle("active");
+  burger.classList.toggle("bx-x");
+});
+
+linkNavigation.forEach((link) => {
+  link.addEventListener("click", () => {
+    navigation.classList.remove("active");
+    burger.classList.remove("bx-x");
+  });
+});
